@@ -12,12 +12,14 @@ menu_ambientes() {
   echo "[1] - KDE Plasma (Wayland)"
   echo "[2] - Sway"
   echo "[3] - Hyprland"
-  read -rp "Digite a opção desejada [1-3]: " choice
+  echo "[4] - Cancelar e sair"
+  read -rp "Digite a opção desejada [1-4]: " choice
 
   case "$choice" in
     1) install_plasma ;;
     2) install_sway ;;
     3) install_hyprland ;;
+    4) echo "Instalação cancelada. Saindo..." && exit 0 ;;
     *) echo "Opção inválida. Tente novamente." && sleep 2 && menu_ambientes ;;
   esac
 }
