@@ -27,12 +27,9 @@ menu_ambientes() {
 install_plasma() {
   echo -e "\n[+] Instalando KDE Plasma (Wayland)...\n"
   sudo pacman -S plasma-meta \
-    plasma-wayland-session \
-    sddm \
-    sddm-kcm \
     wayland \
     xorg-xwayland \
-    kitty \
+    konsole \
     pipewire \
     pipewire-alsa \
     pipewire-pulse \
@@ -41,9 +38,46 @@ install_plasma() {
     base-devel \
     usbutils \
     xf86-video-amdgpu \
-    xdg-desktop-portal-kde --noconfirm
-
-  sudo systemctl enable sddm
+    dosfstools \
+    rustup \
+    dosfstools \
+    firefox-i18n-pt-br \
+    npm \
+    thunderbird \
+    thunderbird-dark-reader \
+    gucharmap \
+    bitwarden \
+    unzip \
+    unrar \
+    zip \
+    p7zip \
+    fuse \
+    mpv \
+    lib32-mangohud \
+    mangohud \
+    wine-staging \
+    gamemode \
+    gvfs-mtp \
+    ttf-jetbrains-mono-nerd \
+    ttf-fira-code \
+    zsh zsh-autosuggestions \
+    ttf-fira-code \
+    zsh zsh-autosuggestions \
+    zsh-syntax-highlighting \
+    reflector \
+    bc \
+    lsd \
+    yt-dlp \
+    bat \
+    net-tools \
+    nodejs \
+    yarn \
+    fzf \
+    man-db \
+    wget \
+    ripgrep \
+    fd \
+    xdg-desktop-portal-kde
 }
 
 install_sway() {
